@@ -4,11 +4,11 @@ const port = 3000;
 const path = require('path');
 var ReactDOMServer = require('react-dom/server');
 const React = require('react');
-import Hello from "../src/hello";
+import App from "../src/app";
 
 app.use("/static", express.static(path.join(__dirname, "..", "public")));
 app.get("/", (req, res) => {
-    const component = ReactDOMServer.renderToString(<Hello />)
+    const component = ReactDOMServer.renderToString(<App />)
     const html = `
         <!DOCTYPE html>
         <html lang="en">
