@@ -22,7 +22,7 @@ app.get("/", (req, res) => {
         
             <body>
                 <div id="root">${component}</div>
-                <script src="bundle.js"></script>
+                <script src="./static/bundle.js"></script>
             </body>
         </html>
     `
